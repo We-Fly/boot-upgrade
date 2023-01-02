@@ -22,6 +22,6 @@ do
 
 	rm vmlinux
 
-	cp vmlinux.new vmlinuxw
+	cp vmlinux.new vmlinux
 
 done
