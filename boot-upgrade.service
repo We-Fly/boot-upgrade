@@ -1,0 +1,16 @@
+[Unit]
+Description=
+After=
+  
+[Service]
+Type=simple
+User=root
+Group=root
+PIDFile=
+ExecStart=/usr/bin/boot-upgrade
+ExecReload=
+ExecStop=killall -g boot-upgrade
+PrivateTmp=true
+  
+[Install]
+WantedBy=multi-user.target
